@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Agung &amp; Onik — Undangan Pernikahan</title>
+<meta name="description" content="Undangan pernikahan digital Wildan Ramadhani Pranata & Bilqis Salsabila. Doa, cerita, galeri, dan ucapan untuk hari bahagia kami." />
+<meta property="og:title" content="Wildan &amp; Bilqis — Undangan Pernikahan" />
+<meta property="og:description" content="Dengan penuh kebahagiaan, kami mengundang Anda di hari istimewa kami." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Parisienne&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div id="loader" class="loader" role="dialog" aria-label="Pembuka undangan">
+  <div class="loader-particles" aria-hidden="true"></div>
+  <div class="loader-inner">
+    <p class="loader-kicker">The Wedding Of</p>
+    <div class="orn-line"><span></span>❦<span></span></div>
+    <h1 class="loader-names">
+      <span class="ln ln-1" id="loadGroom">Agung</span>
+      <span class="ln ln-amp">&amp;</span>
+      <span class="ln ln-2" id="loadBride">Onik</span>
+    </h1>
+    <div class="orn-line"><span></span>❦<span></span></div>
+    <div class="loader-bar" id="loaderBar"><i></i></div>
+    <button class="btn-open" id="btnOpen" hidden>BUKA UNDANGAN</button>
+  </div>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="nav" id="nav">
+  <a class="nav-brand" href="#welcome">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 21s-7.5-4.7-9.3-9A5.2 5.2 0 0 1 12 6.6 5.2 5.2 0 0 1 21.3 12c-1.8 4.3-9.3 9-9.3 9Z"/></svg>
+    <span>Agung &amp; Onik</span>
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+    <a href="#welcome">Beranda</a>
+    <a href="#profil">Mempelai</a>
+    <a href="#cerita">Cerita</a>
+    <a href="#acara">Acara</a>
+    <a href="#lokasi">Lokasi</a>
+    <a href="#hadiah">Hadiah</a>
+    <a href="#pesan">Ucapan</a>
+    <a href="#gallery"> </a>
+  </nav>
+</header>
+
+<main id="site" class="site">
+
+  <!-- ============ 1. WELCOME ============ -->
+  <section class="section hero" id="welcome">
+    <div class="petals" aria-hidden="true"></div>
+    <div class="hero-card reveal" data-anim="scale">
+      <span class="corner tl"></span><span class="corner tr"></span>
+      <span class="corner bl"></span><span class="corner br"></span>
+      <p class="hero-kicker">SELAMAT DATANG</p>
+      <div class="orn-line light"><span></span>✽<span></span></div>
+      <h2 class="script xl" data-name="groom">Moh. Agung romadhani</h2>
+      <p class="amp">&amp;</p>
+      <h2 class="script xl" data-name="bride">Onik Dewiparawesti</h2>
+      <p class="hero-sub" id="heroDate">—</p>
+      <button class="btn-main ripple" id="btnMasuk">MASUK</button>
+    </div>
+    <div class="scroll-hint" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ============ 2. PROFIL + COUNTDOWN ============ -->
+  <section class="section soft" id="profil">
+    <div class="wrap grid-2">
+      <div>
+        <h2 class="title-big reveal" data-anim="left">Selamat Datang</h2>
+        <div class="card-couple reveal" data-anim="up">
+          <div class="card-couple-top"></div>
+          <div class="card-couple-body">
+            <span class="brk tl"></span><span class="brk br"></span>
+            <p class="script lg" data-name="groom">Moh. Agung romadhani</p>
+            <p class="amp small">&amp;</p>
+            <p class="script lg" data-name="bride">Onik Dewiparawesti</p>
+            <p class="note">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
+          </div>
+        </div>
+      </div>
+      <div class="stack">
+        <figure class="polaroid big reveal" data-anim="right">
+          <img src="assets/image/awal.jpeg" alt="Foto prewedding Wildan dan Bilqis saat matahari terbenam" loading="lazy" width="900" height="900" />
+          <figcaption>capture</figcaption>
+        </figure>
+        <div class="countdown reveal" data-anim="up" id="countdown" aria-live="polite">
+          <div class="cd"><b id="cdD">00</b><small>days</small></div>
+          <div class="cd"><b id="cdH">00</b><small>hours</small></div>
+          <div class="cd"><b id="cdM">00</b><small>minutes</small></div>
+          <div class="cd"><b id="cdS">00</b><small>seconds</small></div>
+        </div>
+        <p class="cd-done" id="cdDone" hidden>Hari Bahagia Telah Tiba ❤️</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. MUSIC + STORY ============ -->
+  <section class="section" id="cerita">
+    <div class="wrap grid-2 align-start">
+      <div class="player reveal" data-anim="left">
+        <div class="player-art">
+          <!-- Foto cover HANYA bisa diubah lewat weddingConfig.music.cover di js/script.js -->
+          <img id="playerImg" src="assets/image/cover_lagu.jpeg" alt="Sampul lagu pilihan mempelai" loading="lazy" width="900" height="900" />
+          <span class="art-badge" aria-hidden="true">♪ Our Song</span>
+        </div>
+        <p class="player-artist" id="pArtist">artist — Lagujawa</p>
+        <p class="player-title" id="pTitle">Segara Madu</p>
+        <div class="progress" id="progress" role="slider" tabindex="0" aria-label="Posisi lagu" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="progressFill"></i></div>
+        <div class="times"><span id="tCur">0:00</span><span id="tDur">0:00</span></div>
+        <div class="player-ctrls">
+          <button class="icon-btn" id="pMute" aria-label="Bisukan musik">🔊</button>
+          <button class="play-btn" id="pPlay" aria-label="Putar musik">▶</button>
+          <input class="vol" id="pVol" type="range" min="0" max="1" step="0.01" value="0.7" aria-label="Volume" />
+        </div>
+      </div>
+      <div class="chapters" id="chapters"></div>
+    </div>
+  </section>
+
+  <!-- ============ 3b. QUOTE ============ -->
+  <section class="section quote-sec" id="quote">
+    <div class="wrap quote-wrap reveal" data-anim="up">
+      <span class="quote-mark" aria-hidden="true">❞</span>
+      <blockquote class="quote-text" id="quoteText"></blockquote>
+      <p class="quote-src" id="quoteSrc"></p>
+    </div>
+  </section>
+
+  <!-- ============ 3c. ACARA ============ -->
+  <section class="section soft" id="acara">
+    <h2 class="title-big center reveal" data-anim="up">Acara</h2>
+    <div class="orn-line dark"><span></span>❦<span></span></div>
+    <div class="wrap events" id="events"></div>
+  </section>
+
+  <!-- ============ 3d. LOKASI ============ -->
+  <section class="section" id="lokasi">
+    <h2 class="title-big center reveal" data-anim="up">Lokasi</h2>
+    <div class="orn-line dark"><span></span>❦<span></span></div>
+    <div class="wrap loc-wrap reveal" data-anim="up">
+      <div class="map-frame">
+        <iframe id="mapFrame" title="Peta lokasi acara pernikahan" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="loc-info">
+        <h3 class="loc-name" id="locName">—</h3>
+        <p class="loc-addr" id="locAddr">—</p>
+        <a class="btn-outline ripple" id="locLink" href="#" target="_blank" rel="noopener">PETUNJUK ARAH</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. GALLERY ============ -->
+  <section class="section soft" id="gallery">
+    <h2 class="title-big center reveal" data-anim="up"> </h2>
+    <div class="orn-line dark"><span></span> <span></span></div>
+    <div class="gallery" id="galleryGrid"></div>
+  </section>
+
+  <!-- ============ 4b. HADIAH ============ -->
+  <section class="section soft" id="hadiah">
+    <h2 class="title-big center reveal" data-anim="up">Hadiah</h2>
+    <div class="orn-line dark"><span></span>❦<span></span></div>
+    <p class="gift-note reveal" data-anim="up">Doa restu Anda adalah hadiah terindah. Namun bila berkenan memberi tanda kasih, kami sediakan cara berikut.</p>
+    <div class="wrap gifts" id="gifts"></div>
+  </section>
+
+  <!-- ============ 5. PESAN ============ -->
+  <section class="section" id="pesan">
+    <div class="wrap grid-2 align-start">
+      <form class="msg-form reveal" data-anim="left" id="msgForm" novalidate>
+        <h3 class="form-title">pesan</h3>
+        <label for="mName">Nama :</label>
+        <input id="mName" name="name" type="text" placeholder="Nama" maxlength="40" autocomplete="name" />
+        <label for="mText">Pesan :</label>
+        <textarea id="mText" name="text" rows="4" placeholder="Pesan" maxlength="400"></textarea>
+        <p class="err" id="mErr" role="alert" hidden></p>
+        <button type="submit" class="btn-send ripple">KIRIM</button>
+      </form>
+      <div class="msg-list" id="msgList" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="orn-line light"><span></span>✽<span></span></div>
+    <p class="script lg">Agung &amp; Onik</p>
+    <p class="footer-text">Terima kasih telah menjadi bagian<br />dari hari bahagia kami.</p>
+    <p class="footer-heart">Made with <span>♡</span></p>
+    <p class="footer-copy">© 2026 Agung &amp; Onik</p>
+  </footer>
+</main>
+
+<!-- ============ FLOATING MUSIC CONTROL ============ -->
+<div class="mini-player" id="miniPlayer" hidden>
+  <button class="icon-btn spin" id="mPlay" aria-label="Putar / jeda musik">♪</button>
+  <button class="icon-btn" id="mMute" aria-label="Bisukan musik">🔊</button>
+</div>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Pratinjau foto" hidden>
+  <button class="lb-close" id="lbClose" aria-label="Tutup">✕</button>
+  <button class="lb-nav prev" id="lbPrev" aria-label="Foto sebelumnya">‹</button>
+  <img id="lbImg" src="" alt="" />
+  <button class="lb-nav next" id="lbNext" aria-label="Foto berikutnya">›</button>
+</div>
+
+<!-- ============ CONFIRM DIALOG ============ -->
+<div class="confirm" id="confirm" role="dialog" aria-modal="true" aria-label="Konfirmasi hapus" hidden>
+  <div class="confirm-box">
+    <p>Hapus pesan ini?</p>
+    <div class="confirm-actions">
+      <button class="btn-ghost" id="cCancel">BATAL</button>
+      <button class="btn-danger" id="cOk">HAPUS</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<audio id="audio" preload="none" loop></audio>
+<script src="js/script.js"></script>
+</body>
+</html>
