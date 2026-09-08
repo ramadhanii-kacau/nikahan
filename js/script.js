@@ -41,7 +41,7 @@ const weddingConfig = {
       name: "Resepsi",
       icon: "✽",
       date: "Kamis, 24 September 2026",
-      time: "11.00 — 15.00 WIB",
+      time: "11.00 — selesai WIB",
       place: "Randujalak",
     },
   ],
