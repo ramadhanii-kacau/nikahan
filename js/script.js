@@ -11,7 +11,7 @@ const weddingConfig = {
   groom: "Moh. Agung romadhani",
   bride: "Onik Dewi Parawesti",
   // Ubah tanggal pernikahan di sini (format: YYYY-MM-DDTHH:MM:SS)
-  weddingDate: "2026-09-24T08:00:00",
+  weddingDate: "2026-12-24T08:00:00",
   dateLabel: "Kamis, 24 September 2026",
 
   music: {
